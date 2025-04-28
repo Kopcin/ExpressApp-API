@@ -1,0 +1,20 @@
+{
+  "name": "idomods",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@api/idosell": "file:.api/apis/idosell",
+    "axios": "^1.8.4",
+    "basic-auth": "^2.0.1",
+    "express": "^5.1.0",
+    "express-basic-auth": "^1.2.1",
+    "json2csv": "^6.0.0-alpha.2"
+  }
+}
