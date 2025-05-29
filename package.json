@@ -13,6 +13,7 @@
     "@api/idosell": "file:.api/apis/idosell",
     "axios": "^1.8.4",
     "basic-auth": "^2.0.1",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "express-basic-auth": "^1.2.1",
     "json2csv": "^6.0.0-alpha.2"

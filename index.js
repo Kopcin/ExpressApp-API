@@ -2,6 +2,8 @@ import express from 'express';
 import { fetchAllOrders } from './services/fetchOrders.js';
 import { Parser } from 'json2csv';
 import basicAuth from 'express-basic-auth'
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;

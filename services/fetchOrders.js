@@ -1,11 +1,17 @@
 export async function fetchAllOrders() {
+    if (!process.env.API_KEY) {
+        console.error("ERROR: Missing API_KEY in environment variables.");
+        process.exit(1);
+    }
+
     const url = 'https://zooart6.yourtechnicaldomain.com/api/admin/v5/orders/orders/search';
+    const API_KEY = process.env.API_KEY;
     const options = {
         method: 'POST',
         headers: {
             accept: 'application/json',
             'content-type': 'application/json',
-            'X-API-KEY': 'YXBwbGljYXRpb24xNjpYeHI1K0MrNVRaOXBaY2lEcnpiQzBETUZROUxrRzFFYXZuMkx2L0RHRXZRdXNkcmF5R0Y3ZnhDMW1nejlmVmZP'
+            'X-API-KEY': API_KEY,
         },
         body: JSON.stringify({
             params: {
