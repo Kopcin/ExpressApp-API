@@ -20,7 +20,7 @@ http://localhost:3000
 ### 1. Eksport zamówień do CSV
 
 GET /orders/csv
-* Pobiera wszystkie zamówienia w pliku CSV.
+* Pobiera wszystkie sprzedane produkty do pliku CSV.
 * Obsługuje query parametry:
   * minWorth,
   * maxWorth.
